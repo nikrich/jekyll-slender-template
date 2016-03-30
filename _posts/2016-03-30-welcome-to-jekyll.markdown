@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+color: teal
 date:   2016-03-30 11:31:49 +0200
 categories: jekyll update
 ---

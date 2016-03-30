@@ -1,0 +1,31 @@
+/**
+ * Colors
+ */
+
+.white{
+    background: $white-color;
+}
+
+.white-text{
+    color: $white-color;
+}
+
+.glass{
+    background: $glass-color;
+}
+
+.glass-text{
+    color: lighten($glass-color, 15%);
+}
+
+.grey{
+    background: $grey-color;
+}
+
+.grey-text{
+    color: $grey-color;
+}
+
+.teal{
+    background: $teal-color;
+}

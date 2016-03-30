@@ -3,21 +3,31 @@ layout: default
 ---
 
 <div class="home">
+  
+  
+ 
+  <div class="col col-3">
+    <div class="block white">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+    </div>
+  </div>
+  <div class="col col-9">
+    <div class="block glass">
+        <h2>Yo, I'm Dude Labouwski</h2>
+        <p class="grey-text">Aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores ausLorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus</p>
+    </div>
+  </div>  
+  
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <div class="col col-4">
+        <div class="block {{post.color}}">
+            <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+            <h2>
+              <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+        </div>
+      </div>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

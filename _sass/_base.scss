@@ -14,6 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    margin: 30px;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
@@ -34,9 +35,15 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 2;    
 }
 
+/**
+ * Set header attributes
+ */
+.site-header{
+    text-transform: uppercase;
+}
 
 
 /**
@@ -85,22 +92,19 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
-
-
 /**
  * Links
  */
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($text-color, 15%);
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $text-color;        
     }
 }
 

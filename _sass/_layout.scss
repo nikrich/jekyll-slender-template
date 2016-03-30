@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {  
-    border-bottom: 1px solid $grey-color-light;
+   
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -10,7 +10,7 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 56px;
     letter-spacing: -1px;
@@ -19,7 +19,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $text-color;
     }
 }
 
@@ -34,6 +34,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-size: 14px;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -96,8 +97,7 @@
 /**
  * Site footer
  */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
+.site-footer {   
     padding: $spacing-unit 0;
 }
 
@@ -112,6 +112,9 @@
     margin-left: 0;
 }
 
+/**
+ * Grid
+ */
 .col-wrapper {
     font-size: 15px;
     color: $grey-color;
@@ -121,33 +124,86 @@
 
 .col {
     float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    margin: $spacing-unit;   
 }
 
 .col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(8.33333333% - (#{$spacing-unit} * 2));
+    width:         calc(8.33333333% - (#{$spacing-unit} * 2));
 }
 
 .col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(16.66666667% - (#{$spacing-unit} * 2));
+    width:         calc(16.66666667% - (#{$spacing-unit} * 2));
 }
 
 .col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(25% - (#{$spacing-unit} * 2));
+    width:         calc(25% - (#{$spacing-unit} * 2));  
+}
+
+.col-4 {
+    width: -webkit-calc(33.33333333% - (#{$spacing-unit} * 2));
+    width:         calc(33.33333333% - (#{$spacing-unit} * 2));
+}
+
+.col-5 {
+    width: -webkit-calc(41.66666667% - (#{$spacing-unit} * 2));
+    width:         calc(41.66666667% - (#{$spacing-unit} * 2));
+}
+
+.col-6 {
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+.col-7 {
+    width: -webkit-calc(58.33333333% - (#{$spacing-unit} * 2));
+    width:         calc(58.33333333% - (#{$spacing-unit} * 2));
+}
+
+.col-8 {
+    width: -webkit-calc(66.66666667% - (#{$spacing-unit} * 2));
+    width:         calc(66.66666667% - (#{$spacing-unit} * 2));
+}
+
+.col-9 {
+    width: -webkit-calc(75% - (#{$spacing-unit} * 2));
+    width:         calc(75% - (#{$spacing-unit} * 2));
+}
+
+.col-10 {
+    width: -webkit-calc(83.33333333% - (#{$spacing-unit} * 2));
+    width:         calc(83.33333333% - (#{$spacing-unit} * 2));
+}
+
+.col-11 {
+    width: -webkit-calc(91.66666667% - (#{$spacing-unit} * 2));
+    width:         calc(91.66666667% - (#{$spacing-unit} * 2));
+}
+
+.col-12 {
+    width: -webkit-calc(100% - (#{$spacing-unit} * 2));
+    width:         calc(100% - (#{$spacing-unit} * 2));
 }
 
 @include media-query($on-laptop) {
     .col-1,
-    .col-2 {
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6{
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
         width:         calc(50% - (#{$spacing-unit} / 2));
     }
-
-    .col-3 {
+    
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12{
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
