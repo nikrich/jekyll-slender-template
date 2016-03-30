@@ -4,8 +4,12 @@
 
 
 .block{
-    height: $block-height;    
-    padding: $block-padding;
-    overflow: hidden;     
+    height: $block-height; 
+    overflow: hidden; 
+    
+    .block-body{
+        margin: $block-padding;
+    }
 }
+
 

@@ -7,25 +7,28 @@ layout: default
   
  
   <div class="col col-3">
-    <div class="block white">
-
-    </div>
+      <div class="block glass "  style="background-image:url(assets/avatar.jpg)">      
+      </div>
   </div>
   <div class="col col-9">
     <div class="block glass">
-        <h2>Yo, I'm Dude Labouwski</h2>
-        <p class="grey-text">Aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores ausLorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus</p>
+        <div class="block-body">
+            <h2>Yo, I'm Dude Labouwski</h2>
+            <p class="grey-text">Aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores ausLorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus</p>
+        </div>
     </div>
   </div>  
   
     {% for post in site.posts %}
       <div class="col col-4">
         <div class="block {{post.color}}">
-            <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <div class="block-body">
+                <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-            <h2>
-              <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
+                <h2>
+                  <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+            </div>
         </div>
       </div>
     {% endfor %}
