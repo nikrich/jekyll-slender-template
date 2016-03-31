@@ -12,15 +12,15 @@ $base-font-weight: 100;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     3px;
-$block-height:     200px;
+$spacing-unit:     6px;
+$height-unit:     200px;
 $block-padding:    30px;
 
 $text-color:       #fefefe;
 $background-color: #082736;
 $brand-color:      #2a7ae2;
 
-
+$border-radius: 7px;
 
 
 $white-color: #eee;
@@ -63,10 +63,11 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",       
-        "layout",
+        "base",  
         "blocks",
+        "layout",        
         "colors",
         "helpers",
+        "progressbar",
         "syntax-highlighting"
 ;

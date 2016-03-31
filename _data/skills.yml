@@ -1,0 +1,16 @@
+-   id: javascript
+    descr: javascript    
+    xp: 6
+-   id: css
+    descr: css
+    color: teal
+    xp: 7
+-   id: c#
+    descr: c#    
+    xp: 3
+-   id: angular
+    descr: angularjs    
+    xp: 8
+-   id: java
+    descr: java    
+    xp: 5
