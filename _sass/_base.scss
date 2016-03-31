@@ -13,8 +13,7 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body {
-    margin: 30px;
+body {    
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;

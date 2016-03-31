@@ -7,11 +7,11 @@ layout: default
   
  <div class="col col-12">
       <div class="col col-3">
-          <div class="block glass round-top-left"  style="background-image:url(assets/avatar.jpg)">      
+          <div class="block glass"  style="background-image:url(assets/avatar.jpg)">      
           </div>
       </div>
       <div class="col col-9">
-        <div class="block glass round-top-right">
+        <div class="block glass">
             <div class="block-body">
                 <h2>Yo, I'm Dude Labouwski</h2>
                 <p class="grey-text">Aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores ausLorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus Lorepsum ipsum lores aus</p>
@@ -19,11 +19,24 @@ layout: default
         </div>
       </div>  
   </div>
+  <div class="col col-12">
+    {% for port in site.data.portfolio %}
+      <div class="col col-{{port.width}}">
+        <div class="block" style="background-image:url(assets/{{port.img}})">
+            <div class="block-body height-{{port.height}}">              
+                <h2 class="align-bottom-right">
+                  {{ port.title }}
+                </h2>
+            </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
   <div class="col col-9">
     {% for post in site.posts %}
       <div class="col col-{{post.width}}">
-        <div class="block {{post.color}} height-{{post.height}}">
-            <div class="block-body">
+        <div class="block {{post.color}}">
+            <div class="block-body height-{{post.height}}">
                 <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
 
                 <h2>
@@ -37,10 +50,10 @@ layout: default
     <div class="col col-3">
         <div class="block glass">
             <div class="block-body">
-                <h3>Skills</h3>
+                <h3 class="margin-bot">Skills</h3>                
                 {% for skill in site.data.skills %}
                 <span class="post-meta white-text">{{skill.descr}}</span>
-                <div class="progress"><div class="progress-{{skill.xp}}"></div></div>
+                <div class="progress margin-bot"><div class="progress-{{skill.xp}}"></div></div>                
                 {% endfor %}
             </div>
         </div>
