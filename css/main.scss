@@ -12,8 +12,8 @@ $base-font-weight: 100;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     6px;
-$height-unit:     200px;
+$spacing-unit:     4px;
+$height-unit:     140px;
 $block-padding:    30px;
 
 $text-color:       #fefefe;
@@ -23,7 +23,7 @@ $brand-color:      #2a7ae2;
 $border-radius: 7px;
 
 
-$white-color: #eee;
+$white-color: #fefefe;
 $glass-color: lighten($background-color, 2%);
 $grey-color:       #546E7A;
 $grey-color-light: lighten($grey-color, 40%);

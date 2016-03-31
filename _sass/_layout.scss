@@ -9,6 +9,12 @@
     position: relative;
 }
 
+.title{
+    padding: $spacing-unit * 3;
+    float: left;
+    background: $red-color;
+}
+
 .site-title {
     font-size: 16px;
     font-weight: 300;
@@ -16,7 +22,7 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
+    
     &,
     &:visited {
         color: $text-color;
@@ -195,11 +201,7 @@
     .col-3,
     .col-4,
     .col-5,
-    .col-6{
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-    
+    .col-6,
     .col-7,
     .col-8,
     .col-9,
