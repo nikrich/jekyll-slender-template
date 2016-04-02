@@ -1,6 +1,9 @@
 # Jekyll template
 Beautiful responsive portfolio style template for designers and web developers
 
+[![alt tag](https://api.travis-ci.org/nikrich/jekyll-slender-template.png)](https://travis-ci.org/nikrich/jekyll-slender-template)
+[![Gitter](https://badges.gitter.im/nikrich/jekyll-slender-template.svg)](https://gitter.im/nikrich/jekyll-slender-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 ## Demo
 Find a demo [here](http://nikrich.github.io/jekyll-slender-template/#)
 
