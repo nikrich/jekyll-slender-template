@@ -3,6 +3,8 @@ Beautiful responsive portfolio style template for designers and web developers
 
 [![Gitter](https://badges.gitter.im/nikrich/jekyll-slender-template.svg)](https://gitter.im/nikrich/jekyll-slender-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+![preview](http://i.imgur.com/9Nz6Ib9.jpg)
+
 ## Demo
 Find a demo [here](http://nikrich.github.io/jekyll-slender-template/#)
 
